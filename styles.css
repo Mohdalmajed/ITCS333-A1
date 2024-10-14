@@ -1,0 +1,110 @@
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #8ff08c;
+}
+
+/* Header Style */
+header {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+}
+
+/* navigation list general style */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* navigation list elements style */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* the link of navigation item  style */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect on navigation items */
+nav ul li a:hover {
+    background-color: #ff9900;
+}
+
+/* Main content area style */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sections of main content style */
+section {
+    background-color: #50ee7f;
+    /* White background for sections */
+    padding: 15px;
+    padding-left: 3%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Style */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Images style */
+.gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Footer general design */
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    background-color: #61c477e3;
+}
+
+/* Footer unordered list design */
+footer ul {
+    list-style: none;
+    padding-left: 0.5cm;
+}
+
+/* Footer elements design */
+footer ul li {
+    display: inline;
+    margin-right: 1rem;
+    margin-inline-start: auto;
+}
+
+
+/* Styles to ensure Responsive Website */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section {
+        flex: 1 1 45%;
+    }
+
+    .gallery img {
+        width: 130px;
+        height: 130px;
+    }
+}
